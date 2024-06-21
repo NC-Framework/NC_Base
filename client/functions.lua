@@ -5,3 +5,9 @@ function DebugPrint(message)
         print("^2[DEBUG]^0: " .. message)
     end
 end
+
+function ShowNotification(text)
+    SetNotificationTextEntry("STRING")
+    AddTextComponentString(text)
+    DrawNotification(false, false)
+end
